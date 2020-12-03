@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 use App\Site;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
@@ -26,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         URL::forceScheme('https');
+        Artisan::call('storage:link');
         $sites = Site::all();
         View::share('sites', $sites);
     }
