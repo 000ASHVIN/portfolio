@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/linkstorage', function () {
     $a = Artisan::call('storage:link');
-    return view(function() use($a) {
-        return $a;
-    });
+    return view('home', compact('a'));
 });
 
 
