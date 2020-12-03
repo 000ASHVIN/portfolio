@@ -28,12 +28,9 @@
         list-style-type: none;
         padding-right: 15px;
     }
-</style>   
+</style>  
 @endsection
 @section('content')
-@if(isset($a))
-{{dd($a)}}
-@endif
 <div class="container">
     <div class="about-me" style="padding-top: 60px;">
         <div class="row">

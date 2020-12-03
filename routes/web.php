@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/linkstorage', function () {
-    $a = Artisan::call('storage:link');
-    return view('home', compact('a'));
+    // Artisan::call('storage:link');
+    return view('symlink');
 });
 
 
