@@ -66,9 +66,9 @@
                     <h3 class="font-weight-bold">About me</h3>
                     <p><small>Hello, I'm a web-developer based on Laravel(php). I have rich experience in web site design & building and customization.</small></p>
                     <ul class="d-flex p-0">
-                        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="margin-top: 5px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true" style="margin-top: 5px;"></i></a></li>
                         <li><a href="#"><img src="{{ asset('assets/frontend/images/instagram_logo.png')}}" alt=""></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="color:#ff0000;margin-top: 5px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube" aria-hidden="true" style="color:#ff0000;margin-top: 5px;"></i></a></li>
                     </ul>
                 </div>
             </div>

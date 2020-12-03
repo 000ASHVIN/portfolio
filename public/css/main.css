@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+}
+aside {
+    height: 100%;
+}
+a:hover {
+    text-decoration: none;
+}
+.nav-bar {
+    background: white;
+}
+.nav-bar li {
+    list-style-type: none;
+    padding-right: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar>ul>li>a {
+    color: #737373;
+    text-decoration: none;
+    font-weight: 500;
+}
+.sidebar>ul>li.active>a {
+    color: white;
+}
+.nav-bar li a {
+    color: black;
+    font-weight: 500;
+    padding-bottom: 1px;
+}
+.nav-bar li a.active {
+    border-bottom: 2px solid gray;
+}
+.main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 250px;
+    overflow-x: hidden;
+    z-index: 1;
+    border-right: 1px solid white;
+    box-shadow: 3px 0px 14px lightgrey; 
+}
+.sidebar {
+    padding-top: 100px;
+}
+.sidebar>ul>li {
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.sidebar>ul>li.active {
+    background-color: #6c5dd3;
+}
+.sidebar ul {
+    padding-right: 40px;
+}
+.sub-menu {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.sub-menu li {
+    color: white;
+    text-align: center;
+    padding: 3px 0px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+.sub-menu li a:hover {
+    color: #6c5dd3;
+}
+.sub-menu li:hover {
+    background-color: white;
+}
+.sub-menu li a {
+    color: white;
+    display: block;
+}
+.sub-menu li.active {
+    background-color: white;
+    text-align: center;
+}
+.sub-menu li.active a {
+    color: #6c5dd3;
+    font-weight: 500;
+}
+.sub-menu li.active:first-child::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 23px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    left: 22px;
+    top: 32px;
+}
+.sub-menu li.active:first-child::after {
+    content: '';
+    position: absolute;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 7px solid;
+    left: 41px;
+    top: 52px;
+}
+.sub-menu li.active:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    height: 58px;
+    width: 23px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    left: 22px;
+    top: 32px;
+}
+.sub-menu li.active:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 7px solid;
+    left: 41px;
+    top: 82px;
+}
+.arrow-rotate {
+    padding: 0px 10px 21px 0px !important;
+    transform: rotate(90deg);
+}
+.portfolio-header {
+    margin-left: 380px;
+    margin-right: 50px;
+}
+.card-body p {
+    text-align: center;
+    background-color: #ffa801;
+    border-radius: 15px;
+    box-shadow: 3px 0px 14px lightgrey;
+}

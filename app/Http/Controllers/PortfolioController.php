@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Site;
+use App\SiteInformation;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -14,6 +16,22 @@ class PortfolioController extends Controller
     public function index()
     {
         return view('portfolio.index');
+    }
+
+    public function frontendWork($site_id)
+    {
+        $siteInformations = SiteInformation::where('site_id', '=', $site_id)
+                                            ->where('type', '=', 'frontend')
+                                            ->paginate(6);
+        return view('portfolio.work', compact('siteInformations'));
+    }
+
+    public function adminWork($site_id)
+    {
+        $siteInformations = SiteInformation::where('site_id', '=', $site_id)
+                                            ->where('type', '=', 'admin')
+                                            ->paginate(6);
+        return view('portfolio.work', compact('siteInformations'));
     }
 
     /**
@@ -45,7 +63,8 @@ class PortfolioController extends Controller
      */
     public function show($id)
     {
-        //
+        $siteInformation = SiteInformation::find($id);
+        return view('portfolio.show', compact('siteInformation'));
     }
 
     /**
