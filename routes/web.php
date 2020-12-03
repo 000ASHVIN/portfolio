@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
+    Illuminate\Support\Facades\Artisan::call('storage:link');
 });
 
 
